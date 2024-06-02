@@ -7,7 +7,7 @@ import Education from "./components/Education";
 import Skills from "./components/Skills";
 import Interests from "./components/Interests";
 import Awards from "./components/Awards";
-
+import Game from "./TicTacToe/Game";
 const App: React.FC = () => {
   return (
     <div className="App">
@@ -18,6 +18,7 @@ const App: React.FC = () => {
       <Skills />
       <Interests />
       <Awards />
+      <Game />
     </div>
   );
 };
