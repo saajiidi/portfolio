@@ -1,0 +1,181 @@
+/* Bootstrap overrides */
+body {
+  font-family: "Muli", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Saira Extra Condensed", sans-serif;
+}
+
+/* Header */
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #343a40;
+  color: white;
+  padding: 0.5rem 0;
+  z-index: 1030;
+}
+
+#header a {
+  color: white;
+  text-decoration: none;
+}
+
+#header a:hover {
+  color: #17a2b8;
+}
+
+#header .navbar-brand {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+#header .navbar-nav .nav-item .nav-link {
+  padding: 0.75rem 1rem;
+}
+
+/* Resume sections */
+.resume-section {
+  padding: 5rem 0;
+}
+
+.resume-section h1 {
+  font-size: 2.5rem;
+}
+
+.social-icons a {
+  color: #343a40;
+  font-size: 1.5rem;
+  padding: 0 10px;
+}
+
+.social-icons a:hover {
+  color: #17a2b8;
+}
+
+/* Adjusting margin for sections */
+#about {
+  padding-top: 120px; /* Ensure there's enough space below the fixed header */
+  margin-top: -70px; /* Compensate for the padding to keep layout consistent */
+}
+
+/* Profile Image */
+#about .profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+#about .profile-image:hover {
+  transform: scale(1.5);
+}
+
+@media (max-width: 767px) {
+  #header .navbar-brand {
+    font-size: 1.25rem;
+  }
+
+  #header .navbar-nav .nav-item .nav-link {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .resume-section {
+    padding: 4rem 0;
+  }
+
+  #about {
+    padding-top: 150px; /* More padding for smaller screens */
+    margin-top: -100px;
+  }
+}
+
+/* Profile Image */
+#about .profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #fff; /* Add a white border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+#about .profile-image:hover {
+  transform: scale(1.1); /* Enlarge the image on hover */
+  border-color: #17a2b8; /* Change border color on hover */
+}
+
+/* About Section Content */
+#about .about-content {
+  padding-left: 50px; /* Add padding to the left of content */
+}
+
+@media (max-width: 767px) {
+  /* Adjustments for smaller screens */
+  #about .profile-image {
+    width: 100px;
+    height: 100px;
+  }
+  #about .about-content {
+    padding-left: 20px;
+  }
+}
+
+/* Navbar */
+.navbar {
+  padding-top: 0.5rem; /* Adjust top padding */
+  padding-bottom: 0.5rem; /* Adjust bottom padding */
+  background-color: #007bff; /* Change navbar background color */
+}
+
+.navbar-brand {
+  font-size: 1.25rem; /* Adjust brand font size */
+}
+
+.navbar-toggler {
+  font-size: 0.875rem; /* Adjust toggler font size */
+  padding: 0.25rem 0.75rem; /* Adjust toggler padding */
+}
+
+.navbar-collapse {
+  flex-grow: unset !important; /* Prevent the collapse of the navbar content */
+}
+
+.navbar-nav {
+  margin-right: auto; /* Align nav links to the right */
+}
+
+.navbar-nav .nav-link {
+  padding-right: 1rem; /* Adjust right padding of nav links */
+  padding-left: 1rem; /* Adjust left padding of nav links */
+}
+
+/* Make the navbar sticky */
+body {
+  padding-top: 4.5rem; /* Adjust body padding top to make space for navbar */
+}
+
+/* Add this at the end of the file */
+.navbar {
+  transition: height 0.3s ease;
+}
+
+.navbar-open {
+  height: auto !important;
+}
+
+/* Add this at the end of the file */
+.about-img {
+  margin-bottom: 1.5rem; /* Adjust the margin between image and other content */
+}
+
+.about-content {
+  padding-left: 0; /* Remove left padding for about content */
+}
