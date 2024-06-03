@@ -4,13 +4,12 @@ import React from "react";
 const About: React.FC = () => {
   return (
     <section
-      className="resume-section p-3 p-lg-5 d-flex align-items-center"
+      className="resume-section p-3 p-lg-5 d-flex align-items-center section-spacing"
       id="about"
     >
-      <div className="w-100">
+      <div className="container">
         <h2 className="mb-5">About</h2>
         <div className="row">
-          
           <div className="col-lg-6">
             <p className="mb-5">
               Experienced in leveraging data-driven insights to optimize

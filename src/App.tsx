@@ -7,17 +7,23 @@ import Education from "./components/Education";
 import Skills from "./components/Skills";
 import Interests from "./components/Interests";
 import Awards from "./components/Awards";
+import Projects from "./components/Projects";
 
 const App: React.FC = () => {
   return (
     <div className="App">
       <Header />
-      <About />
-      <Experience />
-      <Education />
-      <Skills />
-      <Interests />
-      <Awards />
+      <body>
+        <main>
+          <About />
+          <Experience />
+          <Education />
+          <Skills />
+          <Interests />
+          <Awards />
+          <Projects />
+        </main>
+      </body>
     </div>
   );
 };

@@ -1,13 +1,19 @@
-/* src/assets/css/custom.css */
+/* styles.css */
+.section-spacing {
+  padding-top: 100px; /* Adjust based on your navbar height */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 /* styles.css */
 body {
   padding-top: 80px; /* Ensure content is not hidden under the navbar */
 }
 
-.section-spacing {
-  margin-top: 80px; /* Adjust the value as needed */
-}
+
 
 .centered-content {
   max-width: 800px; /* You can adjust this value */

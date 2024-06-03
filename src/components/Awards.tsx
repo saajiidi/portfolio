@@ -1,13 +1,14 @@
 // src/components/Awards.tsx
 import React from "react";
 
+
 const Awards: React.FC = () => {
   return (
     <section
-      className="resume-section p-3 p-lg-5 d-flex align-items-center"
+      className="resume-section p-3 p-lg-5 d-flex align-items-center section-spacing"
       id="awards"
     >
-      <div className="w-100">
+      <div className="container">
         <h2 className="mb-5">Awards & Certifications</h2>
         <ul className="fa-ul mb-3">
           <li className="mb-3">
@@ -19,13 +20,13 @@ const Awards: React.FC = () => {
             </a>
 
             <p>
-              <h4>Summary:</h4>Detecting sentiment in stories has become
-              popular, often using deep learning. When data is limited, machine
-              learning is used. Sentiment analysis is hard due to slang,
-              ambiguity, and sarcasm, which can confuse people and machines.
-              This study is part of ongoing research on categorizing paragraphs
-              by sentiment. The dataset includes narrated stories from various
-              sources.
+              <h4>Summary:</h4>
+              Detecting sentiment in stories has become popular, often using
+              deep learning. When data is limited, machine learning is used.
+              Sentiment analysis is hard due to slang, ambiguity, and sarcasm,
+              which can confuse people and machines. This study is part of
+              ongoing research on categorizing paragraphs by sentiment. The
+              dataset includes narrated stories from various sources.
             </p>
           </li>
           <li>
