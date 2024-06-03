@@ -2,10 +2,10 @@ import React from "react";
 
 const Education: React.FC = () => {
   return (
+  
     <section
-      className="resume-section p-3 p-lg-5 d-flex align-items-center"
-      id="education"
-    >
+      className="resume-section p-3 p-lg-5 d-flex align-items-center section-spacing"
+      id="education">
       <div className="w-100">
         <h2 className="mb-5">Education</h2>
 
@@ -51,6 +51,7 @@ const Education: React.FC = () => {
         </div>
       </div>
     </section>
+    
   );
 };
 
