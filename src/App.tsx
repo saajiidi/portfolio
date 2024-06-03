@@ -13,15 +13,17 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <Header />
-      <main>
-        <About />
-        <Experience />
-        <Education />
-        <Skills />
-        <Interests />
-        <Awards />
-        <Projects />
-      </main>
+      <body>
+        <main>
+          <About />
+          <Experience />
+          <Education />
+          <Skills />
+          <Interests />
+          <Awards />
+          <Projects />
+        </main>
+      </body>
     </div>
   );
 };
