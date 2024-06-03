@@ -7,7 +7,7 @@ const Skills: React.FC = () => {
       className="resume-section p-3 p-lg-5 d-flex align-items-center"
       id="skills"
     >
-      <div className="w-100">
+      <div className="container">
         <h2 className="mb-5">Skills</h2>
 
         <ul className="fa-ul mb-5">

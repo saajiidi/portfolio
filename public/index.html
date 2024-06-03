@@ -33,11 +33,42 @@
 
     <!-- Custom styles for this template -->
     <link href="%PUBLIC_URL%/assets/css/resume.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS for spacing -->
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      /* Ensure scroll offset for in-page links */
+      :target::before {
+        content: "";
+        display: block;
+        height: 70px; /* Adjust based on your navbar height */
+        margin-top: -70px; /* Adjust based on your navbar height */
+      }
+    </style>
   </head>
   <body id="page-top">
     <div id="root"></div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        function adjustBodyPadding() {
+          const navbar = document.querySelector(".navbar");
+          const body = document.querySelector("body");
+          if (navbar && body) {
+            const navbarHeight = navbar.offsetHeight;
+            body.style.paddingTop = `${navbarHeight}px`;
+          }
+        }
+
+        // Adjust the padding on load and on window resize
+        adjustBodyPadding();
+        window.addEventListener("resize", adjustBodyPadding);
+      });
+    </script>
   </body>
 </html>

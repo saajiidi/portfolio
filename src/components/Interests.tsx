@@ -1,13 +1,14 @@
 // src/components/Interests.tsx
 import React from "react";
 
+
 const Interests: React.FC = () => {
   return (
     <section
-      className="resume-section p-3 p-lg-5 d-flex align-items-center"
+      className="resume-section p-3 p-lg-5 d-flex align-items-center section-spacing"
       id="interests"
     >
-      <div className="w-100">
+      <div className="container">
         <h2 className="mb-5">Interests</h2>
         <ul className="fa-ul mb-5">
           <li>

@@ -1,12 +1,13 @@
 import React from "react";
 
+
 const Education: React.FC = () => {
   return (
   
     <section
       className="resume-section p-3 p-lg-5 d-flex align-items-center section-spacing"
       id="education">
-      <div className="w-100">
+      <div className="container">
         <h2 className="mb-5">Education</h2>
 
         <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
