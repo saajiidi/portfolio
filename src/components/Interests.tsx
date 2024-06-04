@@ -9,7 +9,7 @@ const Interests: React.FC = () => {
       id="interests"
     >
       <div className="container">
-        <h2 className="mb-5">Interests</h2>
+        <h2 className="mb-5 section-spacing">Interests</h2>
         <ul className="fa-ul mb-5">
           <li>
             <i className="fa-li fa fa-database"></i>

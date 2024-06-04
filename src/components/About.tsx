@@ -8,7 +8,7 @@ const About: React.FC = () => {
       id="about"
     >
       <div className="container">
-        <h2 className="mb-5">About</h2>
+        <h2 className="mb-5 section-spacing">About</h2>
         <div className="row">
           <div className="col-lg-6">
             <p className="mb-5">

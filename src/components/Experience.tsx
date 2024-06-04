@@ -9,7 +9,7 @@ const Experience: React.FC = () => {
       id="experience"
     >
       <div className="container">
-        <h2 className="mb-5">Experience</h2>
+        <h2 className="mb-5 section-spacing">Experience</h2>
 
         <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div className="resume-content">

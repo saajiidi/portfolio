@@ -9,7 +9,7 @@ const Awards: React.FC = () => {
       id="awards"
     >
       <div className="container">
-        <h2 className="mb-5">Awards & Certifications</h2>
+        <h2 className="mb-5 section-spacing">Awards & Certifications</h2>
         <ul className="fa-ul mb-3">
           <li className="mb-3">
             <i className="fa-li fa fa-trophy text-warning"></i>
