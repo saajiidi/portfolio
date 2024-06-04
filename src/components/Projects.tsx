@@ -1,4 +1,4 @@
-// src/components/Awards.tsx
+// src/components/Projects.tsx
 import React from "react";
 
 const Projects: React.FC = () => {
@@ -7,7 +7,7 @@ const Projects: React.FC = () => {
       className="resume-section p-3 p-lg-5 d-flex align-items-center section-spacing"
       id="projects"
     >
-      <div className="container">
+      <div className="container extra-spacing">
         <h2 className="mb-5 section-spacing">Projects</h2>
         <ul className="fa-ul mb-3">
           <li>
