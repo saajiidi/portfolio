@@ -1,7 +1,6 @@
 // src/components/Interests.tsx
 import React from "react";
 
-
 const Interests: React.FC = () => {
   return (
     <section
@@ -30,10 +29,6 @@ const Interests: React.FC = () => {
           <li>
             <i className="fa-li fa fa-landmark"></i>
             Politics
-          </li>
-          <li>
-            <i className="fa-li fa fa-crosshairs"></i>
-            War
           </li>
         </ul>
       </div>
