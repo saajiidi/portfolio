@@ -1,8 +1,7 @@
-/* src/assets/css/custom.css */
-
-/* styles.css */
+/* Ensure content is not hidden under the navbar */
 body {
   padding-top: 80px; /* Ensure content is not hidden under the navbar */
+  margin-left: 250px; /* Adjust for vertical navbar on larger screens */
 }
 
 .section-spacing {
@@ -11,5 +10,112 @@ body {
 
 .centered-content {
   max-width: 800px; /* You can adjust this value */
-  margin: 0 auto; /* Centers the content */
+  margin: auto; /* Centers the content */
+}
+
+/* Vertical Navbar */
+.vertical-navbar {
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #000; /* Ensure navbar is black */
+}
+
+.vertical-navbar .navbar-toggler {
+  display: none; /* Hide toggle button on larger screens */
+}
+
+.vertical-navbar .navbar-collapse {
+  flex-grow: 1;
+  align-items: flex-start;
+}
+
+.vertical-navbar .nav-link {
+  width: 100%;
+  text-align: center;
+  padding-left: 0;
+}
+
+.vertical-navbar .profile-image {
+  width: 120px; /* Larger size for desktop */
+  height: 120px;
+  margin-bottom: 10px;
+  border-radius: 50%; /* Make image rounded */
+  border: 2px solid #fff; /* White border */
+}
+
+.vertical-navbar .profile-name {
+  display: block;
+  font-size: 1.5rem;
+  color: #fff; /* White text */
+}
+
+/* Mobile view adjustments */
+@media (max-width: 991.98px) {
+  body {
+    padding-top: 80px; /* Adjust for top navbar on mobile */
+    margin-left: 0; /* No left margin for vertical navbar */
+  }
+
+  .vertical-navbar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+  }
+
+  .vertical-navbar .navbar-toggler {
+    display: block; /* Show toggle button on smaller screens */
+  }
+
+  .vertical-navbar .navbar-collapse {
+    flex-grow: unset;
+  }
+
+  .vertical-navbar .nav-link {
+    text-align: center; /* Center text on mobile view */
+  }
+
+  .vertical-navbar .profile-section {
+    display: flex;
+    justify-content: space-between; /* Align items across the container */
+    align-items: center;
+    width: 100%;
+  }
+
+  .vertical-navbar .profile-image {
+    width: 30px; /* Smaller size for mobile */
+    height: 30px;
+  }
+
+  .vertical-navbar .profile-name {
+    display: inline; /* Inline with image on mobile */
+    font-size: 1rem; /* Smaller font size for mobile */
+  }
+
+  .navbar-toggler {
+    order: 1;
+    margin-left: auto; /* Move the toggle button to the right */
+  }
+}
+
+/* Desktop view adjustments */
+@media (min-width: 992px) {
+  .vertical-navbar .profile-image {
+    width: 120px; /* Larger size for desktop */
+    height: 120px;
+    margin-bottom: 10px;
+  }
+
+  .vertical-navbar .profile-name {
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  .vertical-navbar .nav-link-custom {
+    text-align: center; /* Center nav items in desktop view */
+  }
 }

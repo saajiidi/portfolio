@@ -7,7 +7,7 @@ const Awards: React.FC = () => {
       className="resume-section p-3 p-lg-5 d-flex align-items-center section-spacing"
       id="awards"
     >
-      <div className="container">
+      <div className="container w-full p-5 rounded-lg shadow-lg">
         <h2 className="mb-5 section-spacing">Awards & Certifications</h2>
         <ul className="fa-ul mb-3">
           <li className="mb-3">

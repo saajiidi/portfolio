@@ -1,5 +1,22 @@
-// src/components/Projects.tsx
 import React from "react";
+
+const projects = [
+  {
+    icon: "fa-project-diagram",
+    label: "Portfolio with just Bootstrap",
+    url: "https://saajiidi.github.io/",
+  },
+  {
+    icon: "fa-project-diagram",
+    label: "Portfolio with React.js",
+    url: "https://saajiidi.github.io/portfolio",
+  },
+  {
+    icon: "fa-project-diagram",
+    label: "Portfolio with NEXT.js & Tailwind CSS",
+    url: "sajid-islam-portfolio.vercel.app",
+  },
+];
 
 const Projects: React.FC = () => {
   return (
@@ -7,19 +24,15 @@ const Projects: React.FC = () => {
       className="resume-section p-3 p-lg-5 d-flex align-items-center section-spacing"
       id="projects"
     >
-      <div className="container extra-spacing">
+      <div className="container extra-spacing w-full p-5 rounded-lg shadow-lg">
         <h2 className="mb-5 section-spacing">Projects</h2>
         <ul className="fa-ul mb-3">
-          <li>
-            <i className="fa-li fa fa-project-diagram text-warning"></i>
-            <a href="https://saajiidi.github.io/portfolio/">
-              My Portfolio in React App with TypeScript
-            </a>
-          </li>
-          <li>
-            <i className="fa-li fa fa-project-diagram text-warning"></i>
-            <a href="">Certification Link2</a>
-          </li>
+          {projects.map((project, index) => (
+            <li key={index}>
+              <i className={`fa-li fa ${project.icon} text-warning`}></i>
+              <a href={project.url}>{project.label}</a>
+            </li>
+          ))}
         </ul>
       </div>
     </section>
