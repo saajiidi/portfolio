@@ -42,7 +42,7 @@ const Header: React.FC = () => {
         </button>
       </div>
       <div className={`lg:block ${expanded ? "block" : "hidden"} w-full`}>
-        <ul className="flex flex-col items-center lg:items-start w-full space-y-2">
+        <ul className="flex flex-col items-center lg:items-start w-full space-y-1">
           {navLinks.map((link, index) => (
             <li key={index} className="w-full text-center lg:text-left">
               <a

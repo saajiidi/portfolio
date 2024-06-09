@@ -23,10 +23,7 @@ const educationItems = [
 
 const Education: React.FC = () => {
   return (
-    <section
-      className="resume-section py-3 lg:py-5 flex align-items-center section-spacing"
-      id="education"
-    >
+    <section className="p-3 p-lg-5 text-black" id="education">
       <div className="container w-full p-5 rounded-lg shadow-lg bg-white">
         <h2 className="mb-5 section-spacing text-3xl font-bold">Education</h2>
         {educationItems.map((item, index) => (
