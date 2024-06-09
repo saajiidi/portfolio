@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./components/Header";
+import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
@@ -11,7 +11,7 @@ import Projects from "./components/Projects";
 const App: React.FC = () => {
   return (
     <div className="App flex">
-      <Header />
+      <Navbar />
       <div className="main-content flex-1 lg:ml-64 p-4 lg:p-8">
         <About />
         <Experience />
