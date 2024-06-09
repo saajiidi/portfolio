@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { FaBars } from "react-icons/fa";
 import profileImage from "../assets/img/profile.jpg";
-import "../assets/css/custom.css"; // Import custom CSS
 
 const navLinks = [
   { href: "#about", label: "About" },
@@ -25,49 +24,42 @@ const Header: React.FC = () => {
   const handleSelect = () => setExpanded(false);
 
   return (
-    <Navbar
-      bg="dark"
-      variant="dark"
-      expand="lg"
-      expanded={expanded}
-      className="vertical-navbar"
-    >
-      <Container
-        fluid
-        className="d-flex flex-lg-column align-items-lg-start p-0"
-      >
-        <Navbar.Brand
-          href="#home"
-          className="mb-lg-4 d-flex align-items-center profile-section"
-        >
-          <img alt="Sajid Islam" src={profileImage} className="profile-image" />
-          <span className="profile-name d-lg-none ml-2">Sajid Islam</span>
-          <Navbar.Toggle
-            aria-controls="basic-navbar-nav"
-            onClick={handleToggle}
-            className="ml-auto d-lg-none"
+    <nav className="bg-black text-white fixed w-full lg:w-64 h-auto lg:h-screen flex flex-col lg:items-start lg:justify-start p-4 lg:p-6 z-50 overflow-auto">
+      <div className="w-full flex items-center justify-between lg:block">
+        <div className="flex items-center lg:mb-4">
+          <img
+            src={profileImage}
+            alt="Sajid Islam"
+            className="rounded-full border-2 border-white w-8 h-8 lg:w-32 lg:h-32"
           />
-        </Navbar.Brand>
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav
-            className="ml-auto flex-lg-column text-center w-100"
-            onSelect={handleSelect}
-          >
-            {navLinks.map((link, index) => (
-              <Nav.Link
-                key={index}
+          <span className="ml-2 lg:hidden">Sajid Islam</span>
+        </div>
+        <button
+          className="lg:hidden text-white text-2xl"
+          onClick={handleToggle}
+        >
+          <FaBars />
+        </button>
+      </div>
+      <div className={`lg:block ${expanded ? "block" : "hidden"} w-full`}>
+        <ul className="flex flex-col items-center lg:items-start w-full space-y-2">
+          {navLinks.map((link, index) => (
+            <li key={index} className="w-full text-center lg:text-left">
+              <a
                 href={link.href}
                 target={link.external ? "_blank" : undefined}
                 rel={link.external ? "noopener noreferrer" : undefined}
-                className="nav-link-custom"
+                className="block px-4 py-2 text-lg text-white hover:bg-gray-700 rounded w-full transition-transform transform hover:scale-105 no-underline"
+                onClick={handleSelect}
+                style={{ textDecoration: "none" }}
               >
                 {link.label}
-              </Nav.Link>
-            ))}
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </nav>
   );
 };
 
