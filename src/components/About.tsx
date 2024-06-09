@@ -29,7 +29,7 @@ const About: React.FC = () => {
           <div className="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start mb-3 mb-lg-0">
             <h1
               className="mb-0 text-7xl font-bold"
-              style={{ fontSize: "7rem" }}
+              style={{ fontSize: "5rem" }}
             >
               Sajid <span className="text-primary">Islam</span>
             </h1>

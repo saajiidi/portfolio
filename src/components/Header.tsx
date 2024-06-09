@@ -26,11 +26,11 @@ const Header: React.FC = () => {
   return (
     <nav className="bg-black text-white fixed w-full lg:w-64 h-auto lg:h-screen flex flex-col lg:items-start lg:justify-start p-4 lg:p-6 z-50 overflow-auto">
       <div className="w-full flex items-center justify-between lg:block">
-        <div className="flex items-center lg:mb-4">
+        <div className="flex items-center lg:mb-10">
           <img
             src={profileImage}
             alt="Sajid Islam"
-            className="rounded-full border-2 border-white w-8 h-8 lg:w-32 lg:h-32"
+            className="rounded-full border-2 border-white w-8 h-8 lg:w-40 lg:h-40"
           />
           <span className="ml-2 lg:hidden">Sajid Islam</span>
         </div>

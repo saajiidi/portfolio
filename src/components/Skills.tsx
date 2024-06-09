@@ -25,43 +25,43 @@ const workflow = [
 const Skills: React.FC = () => {
   return (
     <section
-      className="resume-section p-3 p-lg-5 d-flex align-items-center"
+      className="resume-section py-3 lg:py-5 flex align-items-center section-spacing"
       id="skills"
     >
-      <div className="container w-full p-5 rounded-lg shadow-lg">
-        <h2 className="mb-5 section-spacing">Skills</h2>
+      <div className="container w-full p-5 rounded-lg shadow-lg bg-white">
+        <h2 className="mb-5 section-spacing text-3xl font-bold">Skills</h2>
 
-        <ul className="fa-ul mb-5">
+        <ul className="fa-ul mb-5 list-disc list-inside">
           {skills.map((skill, index) => (
-            <li key={index}>
-              <i className={`fa-li fa ${skill.icon}`}></i>
+            <li key={index} className="mb-2 flex items-center">
+              <i className={`fa-li fa ${skill.icon} mr-2`}></i>
               {skill.label}
             </li>
           ))}
         </ul>
 
-        <div className="subheading mb-3">
-          <a href="#">
-            Tools &amp; Frameworks I have been learning &amp; working on...
-          </a>
+        <div className="subheading mb-3 text-lg font-medium">
+          Tools &amp; Frameworks I have been learning &amp; working on...
         </div>
 
-        <ul className="list-inline dev-icons mb-5">
+        <ul className="list-inline dev-icons mb-5 flex flex-wrap">
           {tools.map((tool, index) => (
-            <li key={index} className="list-inline-item" title={tool.title}>
+            <li
+              key={index}
+              className="list-inline-item text-3xl mx-2"
+              title={tool.title}
+            >
               <i className={tool.icon}></i>
             </li>
           ))}
         </ul>
 
-        <div className="subheading mb-3">
-          <a href="#">Workflow</a>
-        </div>
+        <div className="subheading mb-3 text-lg font-medium">Workflow</div>
 
-        <ul className="fa-ul mb-0">
+        <ul className="fa-ul mb-0 list-disc list-inside">
           {workflow.map((item, index) => (
-            <li key={index}>
-              <i className={`fa-li fa ${item.icon}`}></i>
+            <li key={index} className="mb-2 flex items-center">
+              <i className={`fa-li fa ${item.icon} mr-2`}></i>
               {item.label}
             </li>
           ))}

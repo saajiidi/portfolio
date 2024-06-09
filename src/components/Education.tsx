@@ -25,29 +25,33 @@ const educationItems = [
 const Education: React.FC = () => {
   return (
     <section
-      className="resume-section p-3 p-lg-5 d-flex align-items-center section-spacing"
+      className="resume-section py-3 lg:py-5 flex align-items-center section-spacing"
       id="education"
     >
-      <div className="container w-full p-5 rounded-lg shadow-lg">
-        <h2 className="mb-5 section-spacing">Education</h2>
+      <div className="container w-full p-5 rounded-lg shadow-lg bg-white">
+        <h2 className="mb-5 section-spacing text-3xl font-bold">Education</h2>
         {educationItems.map((item, index) => (
           <div
             key={index}
-            className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+            className="resume-item flex flex-col md:flex-row justify-between mb-5"
           >
             <div className="resume-content">
-              <h3 className="mb-0">{item.institution}</h3>
-              <div className="subheading mb-3">{item.degree}</div>
+              <h3 className="mb-0 text-xl font-semibold">{item.institution}</h3>
+              <div className="subheading mb-3 text-lg font-medium">
+                {item.degree}
+              </div>
               <div>
                 {item.url ? (
-                  <a href={item.url}>{item.field}</a>
+                  <a href={item.url} className="text-blue-500 hover:underline">
+                    {item.field}
+                  </a>
                 ) : (
                   <span>{item.field}</span>
                 )}
               </div>
             </div>
-            <div className="resume-date text-md-right">
-              <span className="text-primary">{item.year}</span>
+            <div className="resume-date text-md-right mt-3 md:mt-0">
+              <span className="text-primary text-blue-600">{item.year}</span>
             </div>
           </div>
         ))}

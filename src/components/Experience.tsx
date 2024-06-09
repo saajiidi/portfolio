@@ -63,38 +63,48 @@ const experienceItems = [
 const Experience: React.FC = () => {
   return (
     <section
-      className="resume-section p-3 p-lg-5 d-flex align-items-center section-spacing"
+      className="resume-section py-3 lg:py-5 flex align-items-center section-spacing"
       id="experience"
     >
-      <div className="container w-full p-5 rounded-lg shadow-lg">
-        <h2 className="mb-5 section-spacing">Experience</h2>
+      <div className="container w-full p-5 rounded-lg shadow-lg bg-white">
+        <h2 className="mb-5 section-spacing text-3xl font-bold">Experience</h2>
         {experienceItems.map((item, index) => (
           <div
             key={index}
-            className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+            className="resume-item flex flex-col md:flex-row justify-between mb-5"
           >
             <div className="resume-content">
-              <h3 className="mb-0">{item.title}</h3>
-              <div className="subheading mb-3">
-                <a href={item.companyUrl}>{item.company}</a>
+              <h3 className="mb-0 text-xl font-semibold">{item.title}</h3>
+              <div className="subheading mb-3 text-lg font-medium">
+                <a
+                  href={item.companyUrl}
+                  className="text-blue-500 hover:underline"
+                >
+                  {item.company}
+                </a>
                 {item.parentCompany && (
                   <>
                     {" - "}
-                    <a href={item.parentCompanyUrl}>{item.parentCompany}</a>
+                    <a
+                      href={item.parentCompanyUrl}
+                      className="text-blue-500 hover:underline"
+                    >
+                      {item.parentCompany}
+                    </a>
                   </>
                 )}
               </div>
-              <p>
+              <p className="mt-2">
                 Key Tasks:
-                <ul>
+                <ul className="list-disc list-inside mt-1">
                   {item.tasks.map((task, i) => (
                     <li key={i}>{task}</li>
                   ))}
                 </ul>
               </p>
             </div>
-            <div className="resume-date text-md-right">
-              <span className="text-primary">{item.date}</span>
+            <div className="resume-date text-md-right mt-3 md:mt-0">
+              <span className="text-primary text-blue-600">{item.date}</span>
             </div>
           </div>
         ))}
