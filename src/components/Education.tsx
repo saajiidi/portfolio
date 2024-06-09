@@ -5,7 +5,6 @@ const educationItems = [
     institution: "North South University",
     degree: "Bachelor of Science",
     field: "Computer Science & Engineering",
-    url: "http://ece.northsouth.edu",
     year: "2019",
   },
   {
@@ -41,13 +40,7 @@ const Education: React.FC = () => {
                 {item.degree}
               </div>
               <div>
-                {item.url ? (
-                  <a href={item.url} className="text-blue-500 hover:underline">
-                    {item.field}
-                  </a>
-                ) : (
-                  <span>{item.field}</span>
-                )}
+                <span>{item.field}</span>
               </div>
             </div>
             <div className="resume-date text-md-right mt-3 md:mt-0">
