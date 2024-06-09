@@ -30,7 +30,6 @@ const Header: React.FC = () => {
           <img
             src={profileImage}
             alt="Sajid Islam"
-            className="rounded-full border-2 border-white w-8 h-8 lg:w-40 lg:h-40 mx-auto"
           />
           <span className="ml-2 lg:hidden">Sajid Islam</span>
         </div>
