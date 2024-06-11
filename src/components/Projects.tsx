@@ -16,6 +16,12 @@ const projects = [
     label: "Portfolio with NEXT.js & Tailwind CSS",
     url: "https://sajid-islam-portfolio.vercel.app",
   },
+
+  {
+    icon: "fa-project-diagram",
+    label: "E-Commerce Interface with React JS",
+    url: "https://gear-master.vercel.app",
+  },
 ];
 
 const Projects: React.FC = () => {
