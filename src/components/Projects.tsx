@@ -9,20 +9,27 @@ const projects = [
   {
     icon: "fa-project-diagram",
     label: "Portfolio with React.js",
-    url: "https://saajiidi.github.io/portfolio",
+    url: "https://saajiidi.github.io/portfolio/",
   },
   {
     icon: "fa-project-diagram",
     label: "Portfolio with NEXT.js & Tailwind CSS",
-    url: "https://sajid-islam-portfolio.vercel.app",
+    url: "https://sajid-islam-portfolio.vercel.app/",
   },
 
   {
     icon: "fa-project-diagram",
     label: "E-Commerce Interface with React JS",
-    url: "https://gear-master.vercel.app",
+    url: "https://gear-master.vercel.app/",
+  },
+
+  {
+    icon: "fa-project-diagram",
+    label: "E-Commerce Interface with React JS",
+    url: "https://altenaitve-school.vercel.app/",
   },
 ];
+
 
 const Projects: React.FC = () => {
   return (
